@@ -1,0 +1,93 @@
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Playwrite NL', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.habilidade {
+    color: #ff6347; /* Tomate */
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#habilidades_ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#habilidades_ul .habilidade:nth-child(odd) {
+    color: #4682b4; /* Azul Aço */
+}
+
+.bio p {
+    color: #333;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .habilidade {
+        font-size: 1.5em;
+    }
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: #0033cc;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+
+.noticias ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.noticias li {
+    margin-bottom: 10px;
+}
+
+.noticias a {
+    font-size: 1em;
+    color: #0033cc;
+    text-decoration: none;
+}
+
+.noticias a:hover {
+    text-decoration: underline;
+}
