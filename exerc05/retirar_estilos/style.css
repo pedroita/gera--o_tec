@@ -1,0 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;  
+  list-style: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+}
+
+li{
+    float: left;
+    margin-right: 16px;
+}

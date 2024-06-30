@@ -1,0 +1,33 @@
+.container{
+    width: 80%;
+    height: 800px;
+    padding: 20px;
+    background-color: brown;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.bloco1{
+    order: 1;
+}
+.bloco2{
+    order: 2;
+}
+.bloco3{
+    order: 3;
+}
+.bloco4{
+    order: 5;
+}
+.bloco5{
+    order: 4;
+}
+
+
+.container div{
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+    color: white;
+}

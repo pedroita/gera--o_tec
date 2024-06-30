@@ -1,0 +1,54 @@
+11. Valores de unidade
+Os tamanhos e distâncias em CSS podem ser definidos de diferentes maneiras. As unidades absolutas são baseadas em um número fixo de pixels da tela e, portanto, não são tão diferentes dos tamanhos e dimensões fixos usados na mídia impressa. Existem também unidades relativas, que são calculadas dinamicamente a partir de alguma medida fornecida pela mídia onde a página está sendo exibida, como o espaço disponível ou outro tamanho escrito em unidades absolutas.
+
+11.1. Unidades absolutas
+As unidades absolutas são equivalentes às suas correspondentes físicas, como centímetros ou polegadas. Nos monitores convencionais, uma polegada tem 96 pixels de largura. As seguintes unidades absolutas são comumente usadas:
+
+in (polegada)
+
+1 in equivale a a 2,54 cm ou 96 px.
+
+cm (centímetro)
+
+1 cm equivale a 96 px / 2,54.
+
+mm (milímetro)
+
+1 mm equivale a 1 cm / 10.
+
+px (pixel)
+
+1 px equivale a 1 / 96 de polegada.
+
+pt (ponto)
+
+1pt equivale a 1 / 72 de polegada.
+
+Lembre-se de que a proporção de pixels por polegada pode variar. Nas telas de alta resolução, onde os pixels são compactados com mais densidade, uma polegada corresponderá a mais de 96 pixels.
+
+ 
+
+11.2. Unidades relativas
+As unidades relativas variam de acordo com as outras medidas ou com as dimensões da janela de visualização. A janela de visualização é a área do documento atualmente visível em sua janela. No modo de tela inteira, a janela de visualização corresponde à tela do dispositivo. As seguintes unidades relativas são comumente usadas:
+
+%
+
+Porcentagem — é relativa ao elemento pai.
+
+em
+
+O tamanho da fonte usada no elemento.
+
+rem
+
+O tamanho da fonte usada no elemento raiz.
+
+vw
+
+1% da largura da janela de visualização.
+
+vh
+
+1% da altura da janela de visualização.
+
+A vantagem de se usar unidades relativas é poder criar layouts ajustáveis alterando apenas alguns tamanhos determinados. Por exemplo, podemos usar a unidade pt para definir o tamanho da fonte no elemento do corpo e a unidade rem para as fontes dos outros elementos. Depois de alterar o tamanho da fonte do corpo, todos os outros tamanhos de fonte serão ajustados a partir dali. Além disso, o uso de vw e vh para definir as dimensões das seções da página as torna ajustáveis para telas de tamanhos diferentes.

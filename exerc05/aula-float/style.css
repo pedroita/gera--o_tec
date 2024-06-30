@@ -1,0 +1,23 @@
+main{
+    width: 1000px;
+    height: 600px;
+    background-color: brown;
+    padding: 20px; /*Espaçamento interno*/
+}
+
+section{
+    width: 700px;
+    height: 500px;
+    padding: 30px;
+    background-color: aqua;
+
+}
+
+
+div{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 20px; /*espaçamento externo*/
+    float: left;
+}

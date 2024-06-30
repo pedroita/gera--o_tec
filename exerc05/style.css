@@ -1,0 +1,43 @@
+*{
+    font-family: sans-serif;
+    font-size: 14pt;
+}
+
+div{
+    border: 2px solid #00000044;
+}
+
+#primeira{
+    background-color: #c4a000 ;
+    width: 6em;
+    margin: 0 auto;
+    float: right;
+}
+
+#segunda{
+    background-color: #4e9a06 ;
+    padding: 1em;
+}
+
+#terceira{
+    background-color: #5c3566;
+    clear: right;
+}
+
+h2{
+    background-color: #ffffff66;
+    margin: 0;
+}
+
+p{
+    background-color: #ffffff66;
+    margin: 0;
+}
+
+span{
+    background-color: #ffffff66;
+}
+
+#container{
+    display: flex;
+}

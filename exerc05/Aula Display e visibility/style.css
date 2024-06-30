@@ -1,0 +1,28 @@
+main{
+    width: 100%;
+    color: white    ;
+}
+h1{
+    background-color: aqua;
+    display: inline;
+}
+.div-1{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    display: inline-block;
+}
+
+.div-2{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: inline-block;
+}
+
+.div-3{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+

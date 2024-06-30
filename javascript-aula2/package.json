@@ -1,0 +1,16 @@
+{
+  "name": "javascript-aula2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "api": "npx json-server api.json --watch --port 3000"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
