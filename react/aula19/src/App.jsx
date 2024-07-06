@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
+import Main from './components/Main/Index';
 
 function App() {
-    const [pokeList, setPokelist] = useState([]);
+    const [pokeList1, setPokelist1] = useState([]);
+    const [pokeList2, setPokelist2] = useState([]);
 
-    async function getPokemons(){
+    async function getFirst10Pokemons(){
         try {
             const pokeArray = [];
             for (let i = 1; i <= 10; i++) {
@@ -14,30 +16,36 @@ function App() {
                 pokeArray.push(data);
             }
             console.log(pokeArray);
-            setPokelist(pokeArray);
+            setPokelist1(pokeArray);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    async function getNext10Pokemons(){
+        try {
+            const pokeArray = [];
+            for (let i = 11; i <= 20; i++) {
+                const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
+                const data = await response.json();
+                pokeArray.push(data);
+            }
+            console.log(pokeArray);
+            setPokelist2(pokeArray);
         } catch (error) {
             console.error(error);
         }
     }
 
     useEffect(() => {
-        getPokemons();
-    }, []); // Chama getPokemons uma vez quando o componente é montado
+        getFirst10Pokemons();
+        getNext10Pokemons();
+    }, []); // Chama as funções uma vez quando o componente é montado
 
     return (
         <>
             <Header/>
-            <main>
-                
-                    {pokeList.map((pokemon, index) => (
-                        <div key={index} className='card'>
-                            <img src={pokemon.sprites.front_default} alt=''></img>
-                            <p>                            {pokemon.forms[0].name}
-                            </p>
-                        </div>
-                    ))}
-                
-            </main>
+            <Main list1={pokeList1} list2={pokeList2}/>
         </>
     );
 }
