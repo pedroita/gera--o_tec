@@ -16,6 +16,7 @@ function buscarEstados(){
     fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/regioes/${regioes.value}/estados`)
     .then(res => res.json())
     .then(res=>{
+        console.log(res)
         estados.innerHTML = "";
         res.map(estado=>{
             estados.innerHTML +=   `<option value="${estado.id}">${estado.nome}</option>`
@@ -23,15 +24,15 @@ function buscarEstados(){
     })
 }
 
+
 function buscarCidades(){
-    fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${estados.id}/municipios`)
+    fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${estados.value}/municipios`)
     .then(res => res.json())
-    .then(res=>{
+    .then(res => {
+        console.log(res)
         cidades.innerHTML = "";
-        res.map(cidade=>{
-            cidades.innerHTML +=   `<option value="${cidade.id}">${cidade.nome}</option>`
+        res.map(cidade => {
+            cidades.innerHTML += `<option value="${cidade.id}">${cidade.nome}</option>`;
         })
     })
 }
-
-buscarCidades()
