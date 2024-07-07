@@ -1,0 +1,28 @@
+/* Estilos para centralizar e definir cor de fundo */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Estilos para os campos de texto */
+.MuiTextField-root {
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos para os botões */
+.MuiButton-root {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para um card genérico */
+.card {
+  padding: 2em;
+}
+
+/* Estilos para um texto de link */
+.read-the-docs {
+  color: #888;
+}
