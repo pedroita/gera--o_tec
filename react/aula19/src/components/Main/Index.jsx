@@ -2,20 +2,20 @@
 function Main(props) {
     
 
-    const {list1, list2} = props;
-    const pokeList = [...list1, ...list2];
+    const {list} = props;
+    const pokeList = [...list];
     
     
     console.log(pokeList);
     return ( 
-        <main>
+        <main className='card-container'>
             {pokeList.map((pokemon, index) => (
                 <div key={index} className='card'>
                     <img src={pokemon.sprites.front_default} alt='' />
                     <p>{pokemon.forms[0].name}</p>
-                    <div>
+                    <div className="badge-container">
                         {pokemon.types.map(({type:{name}}, index) =>(
-                            <span key={index} className>{name}</span>
+                            <p key={index} className="badge">{name}</p>
                         ))}
                     </div>
                 </div>
