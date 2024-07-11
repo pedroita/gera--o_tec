@@ -8,6 +8,8 @@ const Paths = () => {
     return (  
         <>
             <BrowserRouter>
+            
+                
                 <Routes>
                     <Route path="/" element={<PageLayouts/>}>
                         <Route index element={<Home/>}/>
